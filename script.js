@@ -91,7 +91,7 @@ function typeQuestion() {
     if (i < text.length) {
         question.innerHTML = question.innerHTML + text.charAt(i);
         i = i + 1;
-        setTimeout(typeQuestion, 80);
+        setTimeout(typeQuestion, 70);
     } else {
         i = 0
     }
@@ -107,7 +107,7 @@ function typeName() {
     if (i < nameText.length) {
         personName.innerHTML = personName.innerHTML + nameText.charAt(i);
         i = i + 1;
-        setTimeout(typeName, 80);
+        setTimeout(typeName, 70);
     } else {
         i = 0
         setTimeout(typeQuestion, 100);
@@ -116,11 +116,17 @@ function typeName() {
 
 function buttonClick(choice) {
     BUTTONS[1].style.opacity = 1;
+    // if (currentEvent.result_event1 == "endEvent1" || currentEvent.result_event2 == "endEvent1") {
+    //     alert("end game");
+    // }
+
     if (choice == 0) {
         console.log(currentEvent.result_event1);
         setQuestion(currentEvent.result_event1);
 
     } else {
+        console.log(currentEvent.result_event2.toString());
+
         let eventText = currentEvent.result_event2.substr(0, currentEvent.result_event2.length - 1);
         console.log(eventText.toString());
         setQuestion(eventText.toString());
