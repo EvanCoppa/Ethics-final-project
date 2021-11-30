@@ -1,22 +1,22 @@
 Event Name,Question,Person,Green,Red,Result of Green Event,Result of Red Event
 ceoEvent1,Snapchat gets hacked all snaps that were sent in the last 30 days get leaked!  ,Chief Executive Officer,Let the people know about what is going on and how they will fix It,Don't Tell The Public of What Has Happened ,ccoEvent2,ccoEvent1
-ceoEvent2,The stake holders demand more information about the leak,Chief Executive Officer,Tell the CTO what really happened!,Throw the cto under the bus,endEvent1,hrmEvent1
+ceoEvent2,The stake holders demand more information about the leak,Chief Executive Officer,Tell the CTO what really happened!,Throw the cto under the bus,endEvent1,endEvent3
 ceoEvent3,The CCO has reported that after the investigation you are in the clear ,Chief Executive Officer,Come clean and tell the public what really happened,Make up a fake story,endEvent2,hrmEvent2
 ,,,,,,
 ,,,,,,
 ccoEvent1,The CEO has just informed you that they will not be telling the public what has happened,Chief Communications Officer,Choose to relase the info anyway and risk losing your job,Decide to stay quiet bc thats what your boss wants to do ,ctoEvent1,ceoEvent2
-ccoEvent2,The CEO has informed you that these documents were acsessed by a zero day vulnerability but you have heard this is untrue ,Chief Communications Officer,Investagate,Publish the Findings ,ctoEvent1,ceoEvent2
+ccoEvent2,The CEO has informed you that these documents were accessed by a zero day vulnerability but you have heard this is untrue ,Chief Communications Officer,Investagate,Publish the Findings ,ctoEvent1,ceoEvent2
 ccoEvent3,The report gets sent back to you ,Chief Communications Officer,Publish the Findings ,Do Not Publish the Findings,endEvent1,ceoEvent3
 ,,,,,,
 ,,,,,,
-ctoEvent1,The CCO Has Just Approched You and Has a Suspission About the Accuracy of the Report That Was Given,Chief Technology Officer,Agree to read through the report with a keen eye,You Glance Over the Report Hand it Back and Say It Looks Fine,ctoEvent2,ceoEvent2
+ctoEvent1,The CCO has just approched you and has a suspission about the accuracy of the report that was given,Chief Technology Officer,Agree to read through the report with a keen eye,You Glance Over the Report Hand it Back and Say It Looks Fine,ctoEvent2,ceoEvent2
 ctoEvent2,You reviewed the report with a keen eye and the CCO suspisions are correct,Chief Technology Officer,you give the report back to the CCO,You Decided to Bury the Info,ccoEvent3,ceoEvent2
 ,,,,,,
 ,,,,,,
 ,,,,,,
 ,,,,,,
-endEvent1,Your Company Has Succeeded. You Have Sucessfuly Uncovered That the CEO Has Been The one who let in the hacker from a simple password,End Game,N/A,N/A,N/A,N/A
+endEvent1,Your Company Has Succeeded. You Have Successfully Uncovered That the CEO Has Been The one who let in the hacker from a simple password,End Game,N/A,N/A,N/A,N/A
 endEvent2,Your Company Has Succeeded. After Lots of Investigation the CEO Came Clean and Revealed That His Simple Password Let in The Hackers and Tried to Hide It,End Game,N/A,N/A,N/A,N/A
 endEvent3,Your Company Has Failed. The CEO Has Been Hiding the Fact That He Was at Fault for the Hack Because of a Simple Password,End Game,N/A,N/A,N/A,N/A
-hrmEvent1,You inform the CTO he has been forced to resign,Human Resources Manager,You are out of a job so you now reveal the truth from your findings,Bc you are out of a job you now reveal the truth from your findings,endEvent1,endEvent1
+hrmEvent1,You inform the CTO he has been forced to resign,Human Resources Manager,You are out of a job so you now reveal the truth from your findings,You are out of a job so you now reveal the truth from your findings,endEvent3,endEvent3
 hrmEvent2,You inform the CEO he has been forced to resign,Human Resources Manager,The CEO Admits Falt,The CEO Admits Falt,endEvent3,endEvent3

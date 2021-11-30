@@ -97,6 +97,7 @@ function typeName() {
 function buttonClick(choice) {
     // choice = parseInt(choice);
     BUTTONS[1].style.opacity = 1;
+    // alert(currentEvent.result_event1);
     if (currentEvent.result_event1 == "endEvent1" || currentEvent.result_event2 == "endEvent1") {
         gameEnd(1);
     }
@@ -105,6 +106,7 @@ function buttonClick(choice) {
     }
     if (currentEvent.result_event1 == "endEvent3" || currentEvent.result_event2 == "endEvent3") {
         gameEnd(0);
+        
     }
 
     if (choice == 0) {
