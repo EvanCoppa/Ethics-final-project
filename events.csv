@@ -1,0 +1,4 @@
+Event Name,Question,Person,Option 1,Option 2,Result Event 1,Result Event 2,Next Event
+ceoEvent1,How are You Today?,CEO,This Choice 1,This Choice 2,ceoEvent2,ceoEvent3,HR Event
+ceoEvent2,How Were You Yesterday?,CEO,This Choice 1,This Choice 2,N/A,N/A,N/A
+ceoEvent3,How are You?,CEO,This Choice 1,This Choice 2,N/A,N/A,N/A

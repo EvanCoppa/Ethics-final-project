@@ -1,0 +1,53 @@
+body div{
+    display: flex;
+    width: 100vw;
+    margin-top: 40px;
+
+}
+
+body div *{
+ margin: 0 auto;
+}
+
+p{
+    height: 70px;
+    font-family: monospace;
+    max-width: 600px;
+
+}
+
+/* h1{
+margin-right: 20px !important;
+} */
+
+
+h1{
+    margin-top: 150px !important;
+    font-family: monospace;
+}
+/* img{
+margin-left: 20px !important;
+height: 50px;
+width: 50px;
+object-fit: cover;
+border-radius: 50px;
+
+} */
+
+.buttons{
+    margin-top: 500px !important;
+}
+
+input {
+    background-color: #4c7aaf; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 50vw;
+    height: 80px;
+    border-radius: 20px;
+    font-family: monospace;
+  }
