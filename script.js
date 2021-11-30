@@ -127,7 +127,7 @@ function buttonClick(choice) {
     } else {
         console.log(currentEvent.result_event2.toString());
 
-        let eventText = currentEvent.result_event2.substr(0, currentEvent.result_event2.length - 1);
+        let eventText = currentEvent.result_event2.substr(0, currentEvent.result_event2.length);
         console.log(eventText.toString());
         setQuestion(eventText.toString());
     }
