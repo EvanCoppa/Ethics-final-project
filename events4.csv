@@ -6,5 +6,4 @@ ccoEvent2,"The ceo has informed you that these documents were acsessed by a zero
 ccoEvent3,the report gets sent back to you have the ,Chief Communications Officer,publish the findings ,not publish the findings,endEvent1,
 ctoEvent1,The CCO has just approched you and has a suspission about the accuracy of the report that was given- Do you...,Chief Technology Officer,Agree to read through the report with a keen eye,"You glance over the report hand it back and say it looks fine",ctoEvent2,ceoEvent2
 ctoEvent2,You reviewed the report with a keen eye and the CCO suspisions are correct,Chief Technology Officer,you give the report back to the cco,you decided to bury the info,ccoEvent3,ceoEvent2
-endEvent1,"you have sucessfuly uncovered that the CEO has been the one who let in  the hacker from a simple password
-vurtue ethics ",End Game,,,,
+endEvent1,you have sucessfuly uncovered that the CEO has been the one who let in  the hacker from a simple password, Game Over, ,,,,

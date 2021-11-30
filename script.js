@@ -18,14 +18,8 @@ const BUTTONS = document.getElementsByTagName("input");
 const IMG = document.getElementsByTagName("img");
 const H1 = document.getElementsByTagName('h1')
 
+
 const EVENT_DICT = {};
-const PERSON_DICT = {};
-
-PERSON_DICT["CEO"] = "Chief Executive Officer"; /// for name add the full name later
-PERSON_DICT["CCO"] = "Chief Communications Officer";
-PERSON_DICT["CTO"] = "CTO";
-PERSON_DICT["HRM"] = "HRM";
-
 var i = 0;
 
 
@@ -49,7 +43,6 @@ function loadFile(filePath) {
 
 function createEvents(array) {
     array.slice(1).forEach(element => {
-        console.log(PERSON_DICT[element[2]]);
        EVENT_DICT[element[0]] = new Event(element[1], element[2], element[3], element[4], element[5], element[6], element[7])
     });
 }
@@ -72,19 +65,8 @@ function setQuestion(eventText = 'ceoEvent1') {
     // IMG[0].src = event.person.photo;
 }
 
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-        currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-}
-
-
 function typeQuestion() {
-
     let question = QUESTION[0];
-
     if (i == 0) {
         question.innerHTML = " ";
     }
@@ -98,9 +80,7 @@ function typeQuestion() {
 }
 
 function typeName() {
-
     let personName = H1[0];
-
     if (i == 0) {
         personName.innerHTML = " ";
     }
@@ -116,9 +96,15 @@ function typeName() {
 
 function buttonClick(choice) {
     BUTTONS[1].style.opacity = 1;
-    // if (currentEvent.result_event1 == "endEvent1" || currentEvent.result_event2 == "endEvent1") {
-    //     alert("end game");
-    // }
+    if (currentEvent.result_event1 == "endEvent1" || currentEvent.result_event2 == "endEvent1") {
+        gameEnd(1);
+    }
+    if (currentEvent.result_event1 == "endEvent2" || currentEvent.result_event2 == "endEvent2") {
+        gameEnd(1);
+    }
+    if (currentEvent.result_event1 == "endEvent3" || currentEvent.result_event2 == "endEvent3") {
+        gameEnd(1);
+    }
 
     if (choice == 0) {
         console.log(currentEvent.result_event1);
@@ -127,7 +113,7 @@ function buttonClick(choice) {
     } else {
         console.log(currentEvent.result_event2.toString());
 
-        let eventText = currentEvent.result_event2.substr(0, currentEvent.result_event2.length);
+        let eventText = currentEvent.result_event2.substr(0, currentEvent.result_event2.length).trim();
         console.log(eventText.toString());
         setQuestion(eventText.toString());
     }
@@ -139,12 +125,13 @@ function gameEnd(situation) {
     BUTTONS[1].style.opacity = 0;
     body = document.getElementsByTagName('body');
     H1[0].style.color = "white";
+    QUESTION[0].style.color = "white";
     H1[0].innerHTML = "Game Over"
 
     if(situation == 0){
         body[0].style.backgroundColor = "red";
     }else{
-        body[0].style.backgroundColor = "white";
+        body[0].style.backgroundColor = "green";
 
     }
 
