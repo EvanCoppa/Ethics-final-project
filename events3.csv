@@ -1,9 +1,0 @@
-Event Name,Question,Person,Green,Red,Result of Green Event,Result Event 2
-ceoEvent1,Snap gets hacked all snaps that were sent in the last 30 days get leaked!  ,CEO,Let The People Know About What is Going on and How They Will Fix It,Don't Tell The Public of What Has Happened ,ccoEvent2,ccoEvent1
-ceoEvent2,The Stake holders Demand More information about the leak,CEO,Let the people know about what is going on and how they will fix it,Don't tell the public of what has happened ,,
-ccoEvent1,The CEO has just informed you that they will not be telling the public what has happened- Do you...,CCO,Choose to relase the info anyway and risk loosing your job,Decide to stay quite bc thats what your boss wants to do ,ctoEvent1,ceoEvent2
-ccoEvent2,"The ceo has informed you that these documents were acsessed by a zero day vonerablility but you have heard this is untrue ",CCO,Publish,Investagate,ctoEvent1,ceoEvent2
-ctoEvent1,The CCO has just approched you and has a suspission about the accuracy of the report that was given- Do you...,CTF,Agree to read through the report with a keen eye,"You glance over the report, hand it back and say it looks fine",,
-hrmEvent1,"The ceo as asked you to fire ...
-
-Inform them they are FIRED!!",HRM,,,,

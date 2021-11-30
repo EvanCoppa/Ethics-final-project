@@ -144,7 +144,7 @@ function main() {
     // console.log(CSVToArray(loadFile("events3.csv")));
     BUTTONS[1].style.opacity = 0;
 
-    csv = loadFile("events4.csv");
+    csv = loadFile("events.csv");
     array = CSVToArray(csv);
     createEvents(array);
     console.log(array);
