@@ -60,6 +60,7 @@ function setQuestion(eventText = 'ceoEvent1') {
 }
 
 function typeQuestion() {
+    
     let question = QUESTION[0];
     if (i == 0) {
         question.innerHTML = " ";
@@ -70,11 +71,16 @@ function typeQuestion() {
         setTimeout(typeQuestion, 70);
     } else {
         i = 0
+    BUTTONS[0].style.pointerEvents = 'auto';
+    BUTTONS[1].style.pointerEvents = 'auto';
+
     }
 }
 
 function typeName() {
     let personName = H1[0];
+    BUTTONS[0].style.pointerEvents = 'none';
+    BUTTONS[1].style.pointerEvents = 'none';
     if (i == 0) {
         personName.innerHTML = " ";
     }
@@ -89,6 +95,7 @@ function typeName() {
 }
 
 function buttonClick(choice) {
+    // choice = parseInt(choice);
     BUTTONS[1].style.opacity = 1;
     if (currentEvent.result_event1 == "endEvent1" || currentEvent.result_event2 == "endEvent1") {
         gameEnd(1);
