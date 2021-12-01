@@ -55,7 +55,7 @@ function setQuestion(eventText = 'ceoEvent1') {
     text = currentEvent.question;
     nameText = currentEvent.person;
     typeName();
-    BUTTONS[0].value = currentEvent.option1;
+    BUTTONS[0].value = currentEvent.option1; // radomizer for what question gets put on which button
     BUTTONS[1].value = currentEvent.option2;
 }
 
